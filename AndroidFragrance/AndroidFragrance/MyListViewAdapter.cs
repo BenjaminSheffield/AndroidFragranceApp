@@ -12,12 +12,12 @@ using Android.Widget;
 
 namespace AndroidFragrance
 {
-    class MyListViewAdapter : BaseAdapter<string>
+    class MyListViewAdapter : BaseAdapter<FragranceMenu>
     {
-        private List<string> mItems;
+        private List<FragranceMenu> mItems;
         private Context mContext;
 
-        public MyListViewAdapter(Context context, List<string> items)
+        public MyListViewAdapter(Context context, List<FragranceMenu> items)
         {
             mItems = items;
             mContext = context; 
@@ -37,8 +37,18 @@ namespace AndroidFragrance
                 row = LayoutInflater.From(mContext).Inflate(Resource.Layout.listview_row, null, false);
             }
 
-            TextView txtName = row.FindViewById<TextView>(Resource.Id.txtHouse);
-            txtName.Text = mItems[position];
+            TextView txtHouse = row.FindViewById<TextView>(Resource.Id.txtHouse);
+            txtHouse.Text = mItems[position].Gender;
+
+            TextView txtRating = row.FindViewById<TextView>(Resource.Id.txtRating);
+            txtRating.Text = mItems[position].Rating;
+
+            TextView txtGender = row.FindViewById<TextView>(Resource.Id.txtGender);
+            txtGender.Text = mItems[position].Gender;
+
+            TextView txtPrice = row.FindViewById<TextView>(Resource.Id.txtPrice);
+            txtPrice.Text = mItems[position].Price;
+
             return row;
         } 
 
@@ -47,7 +57,7 @@ namespace AndroidFragrance
             get {return mItems.Count; }
         }
 
-        public override string this[int position]
+        public override FragranceMenu this[int position]
         {
             get { return mItems[position]; }
         }

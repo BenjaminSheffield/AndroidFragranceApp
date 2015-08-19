@@ -14,5 +14,9 @@ namespace AndroidFragrance
 {
     class FragranceMenu
     {
+        public string House { get; set; }
+        public string Rating { get; set; }
+        public string Gender { get; set; }
+        public string Price { get; set; }
     }
 }
