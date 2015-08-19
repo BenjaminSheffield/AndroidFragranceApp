@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:weightSum="100">
     <TextView
-        android:text="Name"
+        android:text="House"
         android:layout_width="match_parent"
+        android:layout_weight="25"
         android:layout_height="wrap_content"
-        android:id="@+id/txtName"
-        android:paddingBottom="2dp"
-        android:paddingLeft="5dp"
-        android:paddingTop="2dp" />
+        android:id="@+id/txtHouse" />
+    <TextView
+        android:text="Rating"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRating" />
+    <TextView
+        android:text="Gender"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGender" />
+    <TextView
+        android:text="Price"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPrice" />
 </LinearLayout>

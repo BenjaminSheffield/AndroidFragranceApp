@@ -37,7 +37,7 @@ namespace AndroidFragrance
                 row = LayoutInflater.From(mContext).Inflate(Resource.Layout.listview_row, null, false);
             }
 
-            TextView txtName = row.FindViewById<TextView>(Resource.Id.txtName);
+            TextView txtName = row.FindViewById<TextView>(Resource.Id.txtHouse);
             txtName.Text = mItems[position];
             return row;
         } 
