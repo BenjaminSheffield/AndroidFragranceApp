@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppLogin.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("SlidingTab.Resource", IsApplication=true)]
 
-namespace AppLogin
+namespace SlidingTab
 {
 	
 	
@@ -26,25 +26,6 @@ namespace AppLogin
 		
 		public static void UpdateIdValues()
 		{
-		}
-		
-		public partial class Animation
-		{
-			
-			// aapt resource value: 0x7f040000
-			public const int slide_right = 2130968576;
-			
-			// aapt resource value: 0x7f040001
-			public const int slide_up = 2130968577;
-			
-			static Animation()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Animation()
-			{
-			}
 		}
 		
 		public partial class Attribute
@@ -64,28 +45,16 @@ namespace AppLogin
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int ButtonSignInStyle = 2130837504;
+			public const int ic_action_overflow = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int ButtonSignUpStyle = 2130837505;
+			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int edit_text_style = 2130837506;
+			public const int monoandroidsplash = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Icon = 2130837507;
-			
-			// aapt resource value: 0x7f020004
-			public const int icon_bottle = 2130837508;
-			
-			// aapt resource value: 0x7f020005
-			public const int mail_icon = 2130837509;
-			
-			// aapt resource value: 0x7f020006
-			public const int monoandroidsplash = 2130837510;
-			
-			// aapt resource value: 0x7f020007
-			public const int ProgressBarStyle = 2130837511;
+			public const int xs = 2130837507;
 			
 			static Drawable()
 			{
@@ -100,32 +69,26 @@ namespace AppLogin
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070003
-			public const int btnDialogEmail = 2131165187;
+			// aapt resource value: 0x7f070004
+			public const int item_subtitle = 2131165188;
 			
 			// aapt resource value: 0x7f070005
-			public const int btnSignIn = 2131165189;
-			
-			// aapt resource value: 0x7f070007
-			public const int btnSignUp = 2131165191;
-			
-			// aapt resource value: 0x7f070008
-			public const int progressBar1 = 2131165192;
-			
-			// aapt resource value: 0x7f070004
-			public const int txtCreateAccount = 2131165188;
-			
-			// aapt resource value: 0x7f070001
-			public const int txtEmail = 2131165185;
-			
-			// aapt resource value: 0x7f070000
-			public const int txtFirstName = 2131165184;
+			public const int item_title = 2131165189;
 			
 			// aapt resource value: 0x7f070006
-			public const int txtOr = 2131165190;
+			public const int menu = 2131165190;
+			
+			// aapt resource value: 0x7f070003
+			public const int sample_content_fragment = 2131165187;
 			
 			// aapt resource value: 0x7f070002
-			public const int txtPassword = 2131165186;
+			public const int sample_main_layout = 2131165186;
+			
+			// aapt resource value: 0x7f070000
+			public const int sliding_tabs = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int viewpager = 2131165185;
 			
 			static Id()
 			{
@@ -141,10 +104,13 @@ namespace AppLogin
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int dialog_sign_up = 2130903040;
+			public const int fragment_sample = 2130903040;
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int pager_item = 2130903042;
 			
 			static Layout()
 			{
@@ -156,14 +122,36 @@ namespace AppLogin
 			}
 		}
 		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int actionbar_main = 2131099648;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
 			
-			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			// aapt resource value: 0x7f040000
+			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int sample_hide_log = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int sample_show_log = 2130968578;
 			
 			static String()
 			{
@@ -178,11 +166,14 @@ namespace AppLogin
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int Mono_Android_Theme_Splash = 2131099649;
+			// aapt resource value: 0x7f050001
+			public const int CustomActionBarTheme = 2131034113;
 			
-			// aapt resource value: 0x7f060000
-			public const int dialog_animation = 2131099648;
+			// aapt resource value: 0x7f050000
+			public const int Mono_Android_Theme_Splash = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int MyActionBar = 2131034114;
 			
 			static Style()
 			{
